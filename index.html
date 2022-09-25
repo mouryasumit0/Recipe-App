@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recipes</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://kit.fontawesome.com/08b088227b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="mobile-container">
+		<header>
+			<form id="form" onsubmit="handleSubmit()">
+				<a id="home" class="home-btn"><i class="fas fa-home"></i></a>
+				<input type="text" id="text" placeholder="Search Recipe" value="">
+				<button type="submit"><i class="fas fa-search"></i></button>
+			</form>
+		</header>
+
+		<div class="fav-container">
+			<h3>Favourite Meals</h3>
+			<ul class="fav-meals" id="fav-meal">
+			</ul>
+		</div>
+		<div class="meals" id="meals">
+		</div>
+		<div class="popup-container hidden" id="meal-popup">
+			<div class="popup">
+				<button id="close-popup" class="close-popup">
+					<i class="fas fa-times"></i>
+				</button>
+				<div class="meal-info" id="meal-info"></div>
+			</div>
+		</div>
+</body>
+<script src="script-test.js" defer></script>
+
+</html>
